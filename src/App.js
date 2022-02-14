@@ -9,15 +9,11 @@ export default function App() {
 
   const handlerCC = () => {
     setToggleCC(!toggleCC);
-    if (toggleFC === false) {
-      console.clear();
-    }
+    console.clear();
   };
   const handlerFC = () => {
     setToggleFC(!toggleFC);
-    if (toggleFC === false) {
-      console.clear();
-    }
+    console.clear();
   };
 
   return (
