@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
+import ClassComponent from "./ClassComponent"
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h3>Class Component</h3>
+      <ClassComponent arg={0} />
     </div>
   );
 }
