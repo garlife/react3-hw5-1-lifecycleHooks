@@ -18,10 +18,10 @@ export default function App() {
 
   return (
     <div>
-      <button onClick={handlerCC}>Отобразить Классовый компонент</button>
+      <button onClick={handlerCC}>{toggleCC === true ?  'Скрыть' : 'Отобразить'} Классовый компонент</button>
       <div>{toggleCC && <ClassComponent arg={0} />} </div>
       <hr />
-      <button onClick={handlerFC}>Отобразить Функциональный компонент</button>
+      <button onClick={handlerFC}>{toggleFC === true ?  'Скрыть' : 'Отобразить'} Функциональный компонент</button>
       <div> {toggleFC && <FunctionComponent arg={0} />}</div>
     </div>
   );
