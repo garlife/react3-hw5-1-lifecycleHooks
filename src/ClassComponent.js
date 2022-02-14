@@ -46,10 +46,11 @@ export default class ClassComponent extends React.Component {
     console.log('render before return');
     return (
       <>
+       <h3>Class Component</h3>
         {console.log('render in return')}
         <button onClick={this.handlerClick}>+</button>
         {this.state.counter}
-        {this.state.counter === 1 && <p>Element would be romoved (if counter !== 1): {this.state.counter}</p>}
+        {this.state.counter === 1 && <p>Element would be removed (if counter !== 1): {this.state.counter}</p>}
       </>
     );
   }
